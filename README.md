@@ -40,4 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 =======
 # lucaspaschoalick.github.io
 Personal website
->>>>>>> origin/gh-pages
+
