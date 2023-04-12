@@ -6,17 +6,22 @@ max-width: 1200px;
 margin: auto;    
 `;
 
-const H3Style = styled.h2`
+const ProTitleDiv = styled.div`
+    margin: 0;
+    padding: 0 0 10px;
+`;
+
+const AnchorStyle = styled.a`
     font-family: Raleway;
     font-size: 25px;
     color: #e3e3e3;
+    text-decoration: none;
     font-weight: bold;
-    margin: 0;
-    padding: 0 0 10px;
+    cursor: pointer;
 
     &:hover{
         color: #a1a1a1;
-    }
+    }    
 `;
 
 const H2Style = styled.h2`
@@ -72,10 +77,10 @@ const Projects = () => {
                     <AllProjects>
                         <ProjectsContent>
                             <div>
-                                <H3Style>
-                                    <a href="https://github.com/lucasPaschoalick/curso-laravel" target="_blank">PHP, Laravel Web Page</a>
+                                <ProTitleDiv>
+                                    <AnchorStyle href="https://github.com/lucasPaschoalick/curso-laravel" target="_blank">PHP, Laravel Web Page</AnchorStyle>
 
-                                </H3Style>
+                                </ProTitleDiv>
                             </div>
                             <div>
                                 <Par2Style>

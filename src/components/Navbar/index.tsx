@@ -7,27 +7,30 @@ const NavStyle = styled.div`
     margin: 0;
     padding: 0;
     justify-content: space-between;
+`;
 
-    a{               
-        font-family: Raleway;
-        font-size: 24px;
-        cursor: pointer;
+const AnchorStyle = styled.a`
+    font-family: Raleway;
+    font-size: 24px;
+    color: #e3e3e3;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
 
-        &:hover{
-            color: #a1a1a1;
-        }
-    }
+    &:hover{
+        color: #a1a1a1;
+    }    
 `;
 
 const Navbar = () => {
     return (
         <NavStyle>
             <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'></link>
-            <a href="#home">About</a>
-            <a href="#skillset">Skillset</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="/assets/resume_Lucas_Paschoalick.pdf" target="_blank">Resume</a>
+            <AnchorStyle href="#home">About</AnchorStyle>
+            <AnchorStyle href="#skillset">Skillset</AnchorStyle>
+            <AnchorStyle href="#projects">Projects</AnchorStyle>
+            <AnchorStyle href="#contact">Contact</AnchorStyle>
+            <AnchorStyle href="/assets/resume_Lucas_Paschoalick.pdf" target="_blank">Resume</AnchorStyle>
         </NavStyle>
     )
 }

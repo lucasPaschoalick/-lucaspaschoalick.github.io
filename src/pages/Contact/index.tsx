@@ -53,18 +53,20 @@ const IconsDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items: center;    
+`;
 
-    a{
-        font-family: Raleway;
-        font-size: 20px;
-        color: #e3e3e3;
-        font-weight: bold;
+const AnchorStyle = styled.a`
+    font-family: Raleway;
+    font-size: 20px;
+    color: #e3e3e3;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
 
-        &:hover{
-            color: #a1a1a1;
-        }
-    }
+    &:hover{
+        color: #a1a1a1;
+    }    
 `;
 const LinksStyle = styled.div`
     display: flex;
@@ -73,7 +75,7 @@ const LinksStyle = styled.div`
 `
 
 const BackgroundDiv = styled.div`
-    background: "#171717";
+    background: #171717;
 `
 
 const Contact = () => {
@@ -91,7 +93,7 @@ const Contact = () => {
                             <LinksDiv>
                                 <IconsDiv>
                                     <LinksStyle>
-                                        <a                                        
+                                        <a
                                             href="mailto:lucaspascontato@gmail.com"
                                             rel="noopener noreferrer"
                                             target="_blank"
@@ -99,72 +101,72 @@ const Contact = () => {
                                         
                                     </LinksStyle>
                                     <LinksStyle>
-                                        <a                                        
+                                        <AnchorStyle
                                             href="mailto:lucaspascontato@gmail.com"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                         >
                                             Email
-                                        </a>
+                                        </AnchorStyle>
                                     </LinksStyle>
                                 </IconsDiv>                        
                                 <IconsDiv>
                                     <LinksStyle>
-                                        <a                                        
+                                        <a
                                             href={`https://www.linkedin.com/in/lucas-paschoalick/`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         ><FontAwesomeIcon icon={faLinkedinIn} color="#e3e3e3" height={38}/></a>
                                     </LinksStyle>
                                     <LinksStyle>                                
-                                        <a                                        
+                                        <AnchorStyle
                                             href={`https://www.linkedin.com/in/lucas-paschoalick/`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             Linkedin
-                                        </a>
+                                        </AnchorStyle>
                                     </LinksStyle>
                                 </IconsDiv>            
                                 <IconsDiv>
                                     <LinksStyle>
-                                        <a                                        
+                                        <a
                                             href="https://github.com/lucasPaschoalick"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                         ><FontAwesomeIcon icon={faGithub} color="#e3e3e3" height={38}/></a>
                                     </LinksStyle>
                                     <LinksStyle>
-                                        <a                                        
+                                        <AnchorStyle                                        
                                             href="https://github.com/lucasPaschoalick"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                         >
                                             Github
-                                        </a>
+                                        </AnchorStyle>
                                     </LinksStyle>
                                 </IconsDiv>            
                                 <IconsDiv>
                                     <LinksStyle>
-                                        <a                                        
+                                        <a
                                             href="/assets/resume_Lucas_Paschoalick.pdf"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                         ><FontAwesomeIcon icon={faFile} color="#e3e3e3" height={38}/></a>
                                     </LinksStyle>
                                     <LinksStyle>
-                                        <a
+                                        <AnchorStyle
                                             href="/assets/resume_Lucas_Paschoalick.pdf"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                         >
                                             Resume
-                                        </a>
+                                        </AnchorStyle>
                                     </LinksStyle>
                                 </IconsDiv>
                             </LinksDiv>                    
                         <div>
-                            <ParStyle>Built from scratch by me, it is <a href="https://github.com/lucasPaschoalick/lucaspaschoalick.github.io" target="_blank">Open Source</a>.</ParStyle>
+                            <ParStyle>Built from scratch by me, it is <AnchorStyle href="https://github.com/lucasPaschoalick/lucaspaschoalick.github.io" target="_blank">Open Source</AnchorStyle>.</ParStyle>
                         </div>
                     </ContactDiv>
                 </Container>
