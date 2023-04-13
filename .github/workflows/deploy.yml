@@ -22,8 +22,11 @@ jobs:
 
       - name: Build
         run: |
+          echo "installing dependencies"
           npm i
+          echo "building application"
           npm run build
+          echo "running application"
           npm run export
 
       - name: Deploy
