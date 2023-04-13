@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from 'react-reveal/fade';
 
 const Container = styled.div`
     max-width: 1200px;
-    margin: auto;    
+    margin: auto;
+
+    @media screen and (max-width: 800px) {
+        max-width: 80%;
+    }
 `;
 
 const ParStyle = styled.p`
@@ -31,7 +36,13 @@ const H2Style = styled.h2`
 `;
 
 const SkillContainer = styled.div`
-    padding-top: 200px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 800px) {
+        justify-content: center;
+        max-width: 100%;
+    }
 `;
 
 const ContentDiv = styled.div`
@@ -39,10 +50,20 @@ const ContentDiv = styled.div`
     gap: 55px;
     align-items: center;
     padding: 0 20px;
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
 `;
 
 const TextDiv = styled.div`
     width: 50%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
 `;
 
 const SkillDiv = styled.div`    
@@ -73,41 +94,43 @@ const SpansDiv = styled.div`
 const Skillset = () => {
     return (
         <>
-            <Container id="skillset">
-                <SkillContainer>
-                    <div>
-                        <H2Style>Skillset</H2Style>
-                    </div>
-                    <ContentDiv>
-                        <TextDiv>
-                            <ParStyle>
-                                I have done a variety of projects at University with different technologies. Currently, my focus is on studies and projects related to Web and Data development.
-                            </ParStyle>
-                        </TextDiv>
-                        <TextDiv>                            
-                            <SkillDiv>
-                                <SpansDiv>
-                                    <span>Python</span>
-                                    <span>Java</span>
-                                    <span>PHP</span>
-                                    <span>TypeScript</span>
-                                </SpansDiv>
-                                <SpansDiv>
-                                    <span>Web Scraping</span>
-                                    <span>Spring Boot</span>
-                                    <span>Laravel</span>
-                                    <span>ReactJs</span>
-                                </SpansDiv>
-                                <SpansDiv>
-                                    <span>NodeJs</span>
-                                    <span>GitHub</span>
-                                    <span>REST Api</span>
-                                    <span>SQL/NoSQL</span>
-                                </SpansDiv>
-                            </SkillDiv>
-                        </TextDiv>
-                    </ContentDiv>
-                </SkillContainer>
+            <Container id="skillset">                
+                    <SkillContainer>                        
+                        <div>
+                            <H2Style>Skillset</H2Style>
+                        </div>                        
+                            <Fade cascade>
+                                <ContentDiv>
+                                    <TextDiv>
+                                        <ParStyle>
+                                            I have done a variety of projects at University with different technologies. Currently, my focus is on studies and projects related to Web and Data development.
+                                        </ParStyle>
+                                    </TextDiv>
+                                    <TextDiv>                            
+                                        <SkillDiv>
+                                            <SpansDiv>
+                                                <span>Python</span>
+                                                <span>Java</span>
+                                                <span>PHP</span>
+                                                <span>TypeScript</span>
+                                            </SpansDiv>
+                                            <SpansDiv>
+                                                <span>Web Scraping</span>
+                                                <span>Spring Boot</span>
+                                                <span>Laravel</span>
+                                                <span>ReactJs</span>
+                                            </SpansDiv>
+                                            <SpansDiv>
+                                                <span>NodeJs</span>
+                                                <span>GitHub</span>
+                                                <span>REST Api</span>
+                                                <span>SQL/NoSQL</span>
+                                            </SpansDiv>
+                                        </SkillDiv>
+                                    </TextDiv>
+                                </ContentDiv>
+                            </Fade>
+                    </SkillContainer>                
             </Container>
         </>
     )

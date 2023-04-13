@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from 'react-reveal/fade';
 
 const Container = styled.div`
-max-width: 1200px;
-margin: auto;    
-`;
+    max-width: 1200px;
+    margin: auto;
 
-const ProTitleDiv = styled.div`
-    margin: 0;
-    padding: 0 0 10px;
+    @media screen and (max-width: 800px) {
+        max-width: 80%;
+    }
 `;
 
 const AnchorStyle = styled.a`
@@ -30,13 +30,14 @@ const H2Style = styled.h2`
     color: #e3e3e3;
     font-weight: bold;
     margin: 0;
-    padding: 0 0 40px;
+    padding-bottom: 50px;
 `;
 
 const Par2Style = styled.p`
     font-family: Raleway;
     font-size: 20px;
     color: #e3e3e3;
+    padding-left: 10px;
 
     a{
         font-weight: bold;
@@ -49,7 +50,8 @@ const Par2Style = styled.p`
 `;
 
 const ProjectsContainer = styled.div`
-    padding-top: 200px;    
+    padding-top: 150px;
+    padding-bottom: 50px;    
 `;
 
 const AllProjects = styled.div`
@@ -57,42 +59,75 @@ const AllProjects = styled.div`
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
+    
+    @media screen and (max-width: 800px) {
+        max-width: 100%;
+        justify-content: center;
+    }
 `;
 
 const ProjectsContent = styled.div`
     display: flex;    
     flex-direction: column;
     gap: 5px;
-    max-width: 400px;    
+    max-width: 400px;
+
+    .projects-button {        
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-href {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        padding: 10px;
+        background: #bb86fc;
+        border-radius: 5px;
+
+        &:hover{
+            background: #dcb2ff;
+        }
+    }
+`;
+
+const ProjectsAnchor = styled.a`    
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 20px;
+    color: #202124;
 `;
 
 const Projects = () => {
     return(
         <>
             <Container id="projects">
-                <ProjectsContainer>
-                    <H2Style>
-                        Projects
-                    </H2Style>
-                    <AllProjects>
-                        <ProjectsContent>
-                            <div>
-                                <ProTitleDiv>
-                                    <AnchorStyle href="https://github.com/lucasPaschoalick/curso-laravel" target="_blank">PHP, Laravel Web Page</AnchorStyle>
-
-                                </ProTitleDiv>
-                            </div>
-                            <div>
-                                <Par2Style>
-                                    In this project, I developed an events page, where it is possible to create, delete, register participation and view events on the site.
-                                    PHP was used in the implementation of the project, with the framework Laravel, Blade, following the REST guidelines for the APIs.
-                                    MySQL was used to store the data.
-                                </Par2Style>
-                            </div>
-                        </ProjectsContent>                        
-                    </AllProjects>
-                    
-                </ProjectsContainer>
+                    <ProjectsContainer>                        
+                        <H2Style>
+                            Projects
+                        </H2Style>                        
+                        <Fade cascade>
+                            <AllProjects>
+                                <ProjectsContent>
+                                    <div>
+                                        <AnchorStyle href="https://github.com/lucasPaschoalick/curso-laravel" target="_blank">PHP, Laravel Web Page</AnchorStyle>
+                                    </div>
+                                    <div>
+                                        <Par2Style>
+                                            In this project, I developed an events page, where it is possible to create, delete, register participation and view events on the site.
+                                            PHP was used in the implementation of the project, with the framework Laravel, Blade, following the REST guidelines for the APIs.
+                                            MySQL was used to store the data.
+                                        </Par2Style>
+                                    </div>
+                                    <div className="projects-button">
+                                        <ProjectsAnchor href="https://github.com/lucasPaschoalick/curso-laravel" target="_blank">
+                                            <div className="projects-href">See on GitHub</div>
+                                        </ProjectsAnchor>
+                                    </div>
+                                </ProjectsContent>                        
+                            </AllProjects>
+                        </Fade>
+                    </ProjectsContainer>
             </Container>
         </>
     )
