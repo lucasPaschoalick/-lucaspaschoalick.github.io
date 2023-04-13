@@ -31,7 +31,7 @@ const H2Style = styled.h2`
 `;
 
 const SkillContainer = styled.div`
-    margin-top: 200px;
+    padding-top: 200px;
 `;
 
 const ContentDiv = styled.div`

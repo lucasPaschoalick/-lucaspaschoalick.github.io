@@ -38,7 +38,7 @@ const ContactDiv = styled.div`
     display: flex;
     flex-direction: column;        
     align-items: center;
-    margin-top: 100px;    
+    padding-top: 100px;    
 `;
 
 const LinksDiv = styled.div`
