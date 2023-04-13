@@ -96,6 +96,7 @@ const ProjectsAnchor = styled.a`
     font-weight: bold;
     font-size: 20px;
     color: #202124;
+    text-decoration: none;
 `;
 
 const Projects = () => {
