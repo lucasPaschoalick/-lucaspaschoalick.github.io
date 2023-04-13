@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: |
           echo "installing dependencies"
-          npm i
+          yarn install
           echo "building application"
           npm run build
           echo "running application"
