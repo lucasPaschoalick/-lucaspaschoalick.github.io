@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fade from 'react-reveal/fade';
+import Fade from 'react-reveal/Fade';
 
 const NavStyle = styled.div`
   width: 100%;

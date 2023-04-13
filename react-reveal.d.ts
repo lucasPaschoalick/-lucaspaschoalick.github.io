@@ -1,1 +1,1 @@
-declare module 'react-reveal/fade';
+declare module 'react-reveal/Fade';

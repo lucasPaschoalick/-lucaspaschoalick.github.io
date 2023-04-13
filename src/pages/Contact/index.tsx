@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/free-regular-svg-icons';
-import Fade from 'react-reveal/fade';
+import Fade from 'react-reveal/Fade';
 
 const Container = styled.div`
     max-width: 1200px;
