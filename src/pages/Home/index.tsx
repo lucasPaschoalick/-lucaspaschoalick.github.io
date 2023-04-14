@@ -83,7 +83,7 @@ const Home = () => {
         <>
             <Container id="home">
                 <Row>
-                    <Fade left cascade>
+                    <Fade cascade>
                         <Column>
                             <StyledImage
                                 src="/images/photo.jpeg"
