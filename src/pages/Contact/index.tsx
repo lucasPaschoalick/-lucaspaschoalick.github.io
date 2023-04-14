@@ -31,6 +31,7 @@ const ParStyle = styled.p`
     font-family: Raleway;
     font-size: 20px;
     color: #e3e3e3;
+    margin: 0; 
 
     a{
         font-weight: bold;
@@ -56,7 +57,12 @@ const ContactDiv = styled.div`
     display: flex;
     flex-direction: column;        
     align-items: center;
-    padding-top: 50px;    
+    padding-top: 50px;
+
+    @media screen and (max-width: 800px) {
+        padding: 50px;
+        justify-content: center;
+    }
 `;
 
 const LinksDiv = styled.div`
@@ -64,7 +70,7 @@ const LinksDiv = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
-    padding: 100px 0;
+    padding: 50px 0;
 
     @media screen and (max-width: 700px) {
         flex-direction: column;

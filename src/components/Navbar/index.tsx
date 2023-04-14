@@ -38,7 +38,7 @@ const NavStyle = styled.div`
     }
 
     .dropdown-content{      
-      width: 15%;
+      width: 75px;
       display: flex;
       flex-direction: column;
       gap: 30px;      

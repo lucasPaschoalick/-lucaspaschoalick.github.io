@@ -16,15 +16,7 @@ const ParStyle = styled.p`
     font-family: Raleway;
     font-size: 20px;
     color: #e3e3e3;
-
-    a{
-        font-weight: bold;
-        font-size: 21px;
-
-        &:hover{
-        color: #a1a1a1;
-        }
-    }
+    margin-bottom: 0;
 `;
 
 const Row = styled.div`
@@ -37,8 +29,8 @@ const Row = styled.div`
     @media screen and (max-width: 800px) {
         display: flex;
         flex-direction: column;
-        padding-top: 220px;
-        gap:50px;
+        padding-top: 150px;
+        gap: 50px;
     }
 `;
 
@@ -105,7 +97,8 @@ const Home = () => {
                     <Column>
                         <SpanTitle>Hi, I am</SpanTitle>
                         <HomeTitle>Lucas Paschoalick.</HomeTitle>
-                        <ParStyle> I`m a Computer Engeneering student at Universidade Tecnológica Federal do Paraná - Cornélio Procópio.
+                        <ParStyle> 
+                            I`m a Computer Engeneering student at Universidade Tecnológica Federal do Paraná - Cornélio Procópio.
                         </ParStyle>
                     </Column>
                 </Row>
