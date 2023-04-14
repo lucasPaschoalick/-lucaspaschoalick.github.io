@@ -30,20 +30,25 @@ const NavStyle = styled.div`
       flex-direction: column;      
       position: fixed;
       left: 0px;
+      top: 0px;
     }
 
     .dropdown-icon {
-      padding-left: 50px;
+      padding: 30px 0 0 25px;
     }
 
-    .dropdown-content{
+    .dropdown-content{      
       width: 15%;
       display: flex;
       flex-direction: column;
       gap: 30px;      
-      padding: 30px 20px 30px 50px;
+      padding: 0 25px 25px 25px;
+      margin-top: 30px;
       background: rgba(32,33,36, 0.99);
-      border-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      overflow-y: scroll;
+      max-height: 70vh;
     }
 
     .menu-icon {

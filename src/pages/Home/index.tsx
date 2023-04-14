@@ -67,6 +67,10 @@ const SpanTitle = styled.span`
     font-weight: bold;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 800px) {
+        font-size: 25px;
+    }
 `;
 
 const HomeTitle = styled.h1`
@@ -76,6 +80,10 @@ const HomeTitle = styled.h1`
     font-weight: bold;
     margin: 0;
     padding: 10px 0;
+
+    @media screen and (max-width: 800px) {
+        font-size: 45px;
+    }
 `;
 
 const Home = () => {

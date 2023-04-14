@@ -18,10 +18,14 @@ const AnchorStyle = styled.a`
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-
+    
     &:hover{
         color: #a1a1a1;
-    }    
+    }
+
+    @media screen and (max-width: 800px) {
+        font-size: 18px;
+    }
 `;
 
 const H2Style = styled.h2`
@@ -31,6 +35,10 @@ const H2Style = styled.h2`
     font-weight: bold;
     margin: 0;
     padding-bottom: 50px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 35px;
+    }
 `;
 
 const Par2Style = styled.p`
@@ -38,14 +46,9 @@ const Par2Style = styled.p`
     font-size: 20px;
     color: #e3e3e3;
     padding-left: 10px;
-
-    a{
-        font-weight: bold;
-        font-size: 21px;
-
-        &:hover{
-        color: #a1a1a1;
-        }
+    
+    @media screen and (max-width: 800px) {
+        font-size: 1em;
     }
 `;
 
@@ -97,6 +100,10 @@ const ProjectsAnchor = styled.a`
     font-size: 20px;
     color: #202124;
     text-decoration: none;
+
+    @media screen and (max-width: 800px) {
+        font-size: 1em;
+    }
 `;
 
 const Projects = () => {

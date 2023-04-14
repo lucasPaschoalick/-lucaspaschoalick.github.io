@@ -16,13 +16,8 @@ const ParStyle = styled.p`
     font-size: 20px;
     color: #e3e3e3;
 
-    a{
-        font-weight: bold;
-        font-size: 21px;
-
-        &:hover{
-        color: #a1a1a1;
-        }
+    @media screen and (max-width: 800px) {
+        font-size: 1em;
     }
 `;
 
@@ -33,6 +28,10 @@ const H2Style = styled.h2`
     font-weight: bold;
     margin: 0;
     padding: 0 0 40px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 35px;
+    }
 `;
 
 const SkillContainer = styled.div`
@@ -83,6 +82,10 @@ const SpansDiv = styled.div`
         font-size: 20px;
         color: #e3e3e3;
         font-weight: bold;
+
+        @media screen and (max-width: 800px) {
+            font-size: 15px;
+        }
     };
 
     @media (max-width: 1024px) {

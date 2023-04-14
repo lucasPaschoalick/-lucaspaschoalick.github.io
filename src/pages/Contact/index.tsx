@@ -21,6 +21,10 @@ const H2Style = styled.h2`
     font-weight: bold;
     margin: 0;
     padding: 0 0 40px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 35px;
+    }
 `;
 
 const ParStyle = styled.p`
@@ -36,6 +40,14 @@ const ParStyle = styled.p`
         &:hover{
         color: #dcb2ff;
         }
+
+        @media screen and (max-width: 800px) {
+            font-size: 1.1em;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        font-size: 1em;
     }
 `;
 
@@ -81,7 +93,11 @@ const AnchorStyle = styled.a`
 
     &:hover{
         color: #a1a1a1;
-    }    
+    }
+
+    @media screen and (max-width: 800px) {
+        font-size: 1em;
+    }
 `;
 const LinksStyle = styled.div`
     display: flex;
