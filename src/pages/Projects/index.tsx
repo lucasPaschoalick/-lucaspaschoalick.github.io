@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 const Container = styled.div`
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 
     @media screen and (max-width: 800px) {
         max-width: 80%;
@@ -44,8 +44,7 @@ const H2Style = styled.h2`
 const Par2Style = styled.p`
     font-family: Raleway;
     font-size: 20px;
-    color: #e3e3e3;
-    padding-left: 10px;
+    color: #e3e3e3;    
     
     @media screen and (max-width: 800px) {
         font-size: 1em;
@@ -59,9 +58,11 @@ const ProjectsContainer = styled.div`
 
 const AllProjects = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
+    gap: 50px;
+    
     
     @media screen and (max-width: 800px) {
         max-width: 100%;
@@ -72,21 +73,23 @@ const AllProjects = styled.div`
 const ProjectsContent = styled.div`
     display: flex;    
     flex-direction: column;
-    gap: 5px;
-    max-width: 400px;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 400px;    
 
     .projects-button {        
         display: flex;
         justify-content: center;
+        align-items: flex-end;        
     }
 
     .projects-href {
-        display: flex;
-        justify-content: center;
-        align-items: center;        
+        display: inline-block;
         padding: 10px;
         background: #bb86fc;
         border-radius: 5px;
+        text-align: center;
+        white-space: nowrap;        
 
         &:hover{
             background: #dcb2ff;
@@ -122,9 +125,7 @@ const Projects = () => {
                                     </div>
                                     <div>
                                         <Par2Style>
-                                            In this project, I developed an events page, where it is possible to create, delete, register participation and view events on the site.
-                                            PHP was used in the implementation of the project, with the framework Laravel, Blade, following the REST guidelines for the APIs.
-                                            MySQL was used to store the data.
+                                        This project involves an events page with CRUD functionalities for create, delete, register participation, and view events on the site. It was developed using PHP (Laravel, Blade), REST API, and MySQL.
                                         </Par2Style>
                                     </div>
                                     <div className="projects-button">
@@ -132,7 +133,52 @@ const Projects = () => {
                                             <div className="projects-href">See on GitHub</div>
                                         </ProjectsAnchor>
                                     </div>
-                                </ProjectsContent>                        
+                                </ProjectsContent>
+                                <ProjectsContent>
+                                    <div>
+                                        <AnchorStyle href="https://github.com/lucasPaschoalick/tcc-utfpr-avaliacao-de-acessibilidade" target="_blank">Web Pages Accessibility Tests</AnchorStyle>
+                                    </div>
+                                    <div>
+                                        <Par2Style>
+                                        This is my Undergraduate Final Project for my Bachelor's degree. I developed a Python Web Crawler to run accessibility tests based on WCAG guidelines on a list of web pages using Selenium WebDriver and Axe-core.
+                                        </Par2Style>
+                                    </div>
+                                    <div className="projects-button">
+                                        <ProjectsAnchor href="https://github.com/lucasPaschoalick/tcc-utfpr-avaliacao-de-acessibilidade" target="_blank">
+                                            <div className="projects-href">See on GitHub</div>
+                                        </ProjectsAnchor>
+                                    </div>
+                                </ProjectsContent>
+                                <ProjectsContent>
+                                    <div>
+                                        <AnchorStyle href="https://github.com/lucasPaschoalick/desafio-xbrain" target="_blank">Java Spring Boot API</AnchorStyle>
+                                    </div>
+                                    <div>
+                                        <Par2Style>
+                                        This project involves a challenge to develop a Java Spring Boot API for registering new sales in an H2 database and retrieving a list of sellers based on the period provided as a parameter.
+                                        </Par2Style>
+                                    </div>
+                                    <div className="projects-button">
+                                        <ProjectsAnchor href="https://github.com/lucasPaschoalick/desafio-xbrain" target="_blank">
+                                            <div className="projects-href">See on GitHub</div>
+                                        </ProjectsAnchor>
+                                    </div>
+                                </ProjectsContent>
+                                <ProjectsContent>
+                                    <div>
+                                        <AnchorStyle href="https://github.com/lucasPaschoalick/todo-list-crud" target="_blank">ToDo List CRUD</AnchorStyle>
+                                    </div>
+                                    <div>
+                                        <Par2Style>
+                                        This project involves a challenge to develop a task management system (to-do list) with CRUD functionalities. It was implemented using HTML, CSS, JavaScript, Jquery, Ajax, PHP and MySQL.
+                                        </Par2Style>
+                                    </div>
+                                    <div className="projects-button">
+                                        <ProjectsAnchor href="https://github.com/lucasPaschoalick/todo-list-crud" target="_blank">
+                                            <div className="projects-href">See on GitHub</div>
+                                        </ProjectsAnchor>
+                                    </div>
+                                </ProjectsContent>
                             </AllProjects>
                         </Fade>
                     </ProjectsContainer>
