@@ -98,7 +98,7 @@ const Home = () => {
                         <SpanTitle>Hi, I am</SpanTitle>
                         <HomeTitle>Lucas Paschoalick.</HomeTitle>
                         <ParStyle> 
-                            I`m a Computer Engeneering student at Universidade Tecnológica Federal do Paraná - Cornélio Procópio, and I'm currently providing services as a WebScraping Specialist.
+                            I`m a Computer Engeneering student at Universidade Tecnológica Federal do Paraná - Cornélio Procópio, and I'm currently providing services as a Web Scraping Engineer.
                         </ParStyle>
                     </Column>
                 </Row>
